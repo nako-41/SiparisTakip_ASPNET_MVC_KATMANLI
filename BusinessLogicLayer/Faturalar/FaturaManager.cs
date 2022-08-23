@@ -1,4 +1,5 @@
-﻿using Interfaces.Stoks;
+﻿using Entities.Models;
+using Interfaces.Faturalar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,31 +7,36 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLogicLayer.Stok
+namespace BusinessLogicLayer.Faturalar
 {
-    public class StokManager : IStokService
+    public class FaturaManager : IFaturaService
     {
-        public Entities.Models.Stok Getir(int id)
+        public IQueryable FaturaRaporu(DateTime baslangic, DateTime bitis)
         {
             throw new NotImplementedException();
         }
 
-        public int Guncelle(Entities.Models.Stok entity)
+        public Fatura Getir(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Entities.Models.Stok Kaydet(Entities.Models.Stok entity)
+        public int Guncelle(Fatura entity)
         {
             throw new NotImplementedException();
         }
 
-        public List<Entities.Models.Stok> Listele()
+        public Fatura Kaydet(Fatura entity)
         {
             throw new NotImplementedException();
         }
 
-        public List<Entities.Models.Stok> Listele(Expression<Func<Entities.Models.Stok, bool>> filter)
+        public List<Fatura> Listele()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Fatura> Listele(Expression<Func<Fatura, bool>> filter)
         {
             throw new NotImplementedException();
         }
@@ -40,7 +46,7 @@ namespace BusinessLogicLayer.Stok
             throw new NotImplementedException();
         }
 
-        public bool Sil(Entities.Models.Stok entity)
+        public bool Sil(Fatura entity)
         {
             throw new NotImplementedException();
         }

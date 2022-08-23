@@ -42,9 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stok\StokManager.cs" />
+    <Compile Include="Stoks\StokManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{8957060e-1b0b-427e-a706-c1693d288bd7}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{7a1d277e-c060-441e-90ea-860d1200820b}</Project>
       <Name>Entities</Name>
