@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using DataAccessLayer.Abstract.FaturaDal;
+using Entities.Models;
 using Interfaces.Faturalar;
 using System;
 using System.Collections.Generic;
@@ -11,24 +12,31 @@ namespace BusinessLogicLayer.Faturalar
 {
     public class FaturaManager : IFaturaService
     {
+        IFaturaDal _faturaDal;
+
+        public FaturaManager(IFaturaDal faturaDal)
+        {
+            _faturaDal = faturaDal;
+        }
+
         public IQueryable FaturaRaporu(DateTime baslangic, DateTime bitis)
         {
-            throw new NotImplementedException();
+            return _faturaDal.FaturaRaporu(baslangic,bitis);
         }
 
         public Fatura Getir(int id)
         {
-            throw new NotImplementedException();
+            return _faturaDal.Getir(id);
         }
 
         public int Guncelle(Fatura entity)
         {
-            throw new NotImplementedException();
+            return _faturaDal.Guncelle(entity);
         }
 
         public Fatura Kaydet(Fatura entity)
         {
-            throw new NotImplementedException();
+            return _faturaDal.Kaydet(entity);
         }
 
         public List<Fatura> Listele()

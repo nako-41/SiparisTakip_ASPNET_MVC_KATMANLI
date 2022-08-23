@@ -52,8 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\FaturaDal\IFaturaDal.cs" />
+    <Compile Include="Abstract\KullanıcıDal\IKullaniciDal.cs" />
     <Compile Include="Abstract\Stoks\IStokDal.cs" />
     <Compile Include="Concrete\EntityFramework\Context\SiparisTakipContext.cs" />
+    <Compile Include="Concrete\EntityFramework\Repository\EfFaturaRepository.cs" />
+    <Compile Include="Concrete\EntityFramework\Repository\EfKullaniciRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfStokRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

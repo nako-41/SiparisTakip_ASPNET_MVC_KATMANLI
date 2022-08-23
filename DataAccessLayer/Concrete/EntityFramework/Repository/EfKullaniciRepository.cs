@@ -1,4 +1,4 @@
-﻿using DataAccessLayer.Abstract.FaturaDal;
+﻿using DataAccessLayer.Abstract.Stoks;
 using DataAcessLayer.Concrete.EntityFramework.Context;
 using Entities.Models;
 using System;
@@ -10,35 +10,35 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.EntityFramework.Repository
 {
-    public class EfFaturaRepository : IFaturaDal
+    public class EfKullaniciRepository : IKullaniciDal
     {
         SiparisTakipContext context = new SiparisTakipContext();
-        public IQueryable FaturaRaporu(DateTime baslangic, DateTime bitis)
+        public Kullanici Getir(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Fatura Getir(int id)
-        {
-            return context.Fatura.AsNoTracking().Where(x => x.FaturaID == id).SingleOrDefault();
-        }
-
-        public int Guncelle(Fatura entity)
+        public int Guncelle(Kullanici entity)
         {
             throw new NotImplementedException();
         }
 
-        public Fatura Kaydet(Fatura entity)
+        public Kullanici Kaydet(Kullanici entity)
         {
             throw new NotImplementedException();
         }
 
-        public List<Fatura> Listele()
+        public Kullanici KullaniciGiris(string kullaniciAdi, string parola)
+        {
+            return context.Kullanici.Where(x=>x.KullaniciAdi==kullaniciAdi && x.Sifre==parola).SingleOrDefault();
+        }
+
+        public List<Kullanici> Listele()
         {
             throw new NotImplementedException();
         }
 
-        public List<Fatura> Listele(Expression<Func<Fatura, bool>> filter)
+        public List<Kullanici> Listele(Expression<Func<Kullanici, bool>> filter)
         {
             throw new NotImplementedException();
         }
@@ -48,7 +48,7 @@ namespace DataAccessLayer.Concrete.EntityFramework.Repository
             throw new NotImplementedException();
         }
 
-        public bool Sil(Fatura entity)
+        public bool Sil(Kullanici entity)
         {
             throw new NotImplementedException();
         }
