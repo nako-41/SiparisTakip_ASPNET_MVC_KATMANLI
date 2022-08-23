@@ -21,7 +21,7 @@ namespace DataAccessLayer.Concrete.EntityFramework.Repository
                 return context.Stok.AsNoTracking().Where(x => x.StokID == id).SingleOrDefault();
             }
 
-
+          
         }
 
         public int Guncelle(Stok entity)
