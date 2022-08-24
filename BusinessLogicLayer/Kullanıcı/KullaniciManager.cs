@@ -38,6 +38,12 @@ namespace BusinessLogicLayer.Kullanıcı
         {
             try
             {
+                if (string.IsNullOrEmpty(kullaniciAdi.Trim()) || string.IsNullOrEmpty(parola.Trim()))
+                {
+                    throw new Exception("kullanıcıAdı veya parola boş geçilemez");
+                    
+                }
+
                 var kullanici = _kullaniciDal.KullaniciGiris(kullaniciAdi,parola);
                 if (kullaniciAdi==null)
                 {

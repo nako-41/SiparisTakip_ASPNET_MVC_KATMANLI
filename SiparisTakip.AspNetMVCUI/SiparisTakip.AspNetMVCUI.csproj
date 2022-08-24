@@ -88,11 +88,103 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\baguetteBox.min.css" />
+    <Content Include="Content\css\bootstrap-grid.css" />
+    <Content Include="Content\css\bootstrap-grid.min.css" />
+    <Content Include="Content\css\bootstrap-reboot.css" />
+    <Content Include="Content\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\css\bootstrap-select.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\calendar.css" />
+    <Content Include="Content\css\calendar.min.css" />
+    <Content Include="Content\css\color_2.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Content\css\flaticon.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\jquery.fancybox.css" />
+    <Content Include="Content\css\jquery.fancybox.min.css" />
+    <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\css\perfect-scrollbar.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\css\semantic.min.css" />
+    <Content Include="Content\fonts\flaticon.css" />
+    <Content Include="Content\fonts\flaticon.html" />
+    <Content Include="Content\fonts\Flaticon.svg" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\images\landing_page\stack-of-three-black-hot-stones-spa-salon-vector-16122479.jpg" />
+    <Content Include="Content\images\layout_img\american-express.png" />
+    <Content Include="Content\images\layout_img\bg1.png" />
+    <Content Include="Content\images\layout_img\error.png" />
+    <Content Include="Content\images\layout_img\g1.jpg" />
+    <Content Include="Content\images\layout_img\g10.jpg" />
+    <Content Include="Content\images\layout_img\g11.jpg" />
+    <Content Include="Content\images\layout_img\g12.jpg" />
+    <Content Include="Content\images\layout_img\g13.jpg" />
+    <Content Include="Content\images\layout_img\g14.jpg" />
+    <Content Include="Content\images\layout_img\g15.jpg" />
+    <Content Include="Content\images\layout_img\g16.jpg" />
+    <Content Include="Content\images\layout_img\g2.jpg" />
+    <Content Include="Content\images\layout_img\g3.jpg" />
+    <Content Include="Content\images\layout_img\g4.jpg" />
+    <Content Include="Content\images\layout_img\g5.jpg" />
+    <Content Include="Content\images\layout_img\g6.jpg" />
+    <Content Include="Content\images\layout_img\g7.jpg" />
+    <Content Include="Content\images\layout_img\g8.jpg" />
+    <Content Include="Content\images\layout_img\g9.jpg" />
+    <Content Include="Content\images\layout_img\login_image.jpg" />
+    <Content Include="Content\images\layout_img\map_icon.png" />
+    <Content Include="Content\images\layout_img\mastercard.png" />
+    <Content Include="Content\images\layout_img\msg1.png" />
+    <Content Include="Content\images\layout_img\msg2.png" />
+    <Content Include="Content\images\layout_img\msg3.png" />
+    <Content Include="Content\images\layout_img\msg4.png" />
+    <Content Include="Content\images\layout_img\msg5.png" />
+    <Content Include="Content\images\layout_img\pattern.png" />
+    <Content Include="Content\images\layout_img\pattern_h.png" />
+    <Content Include="Content\images\layout_img\paypal.png" />
+    <Content Include="Content\images\layout_img\user_img.jpg" />
+    <Content Include="Content\images\layout_img\visa.png" />
+    <Content Include="Content\images\logo\logo.png" />
+    <Content Include="Content\images\logo\logo_black.png" />
+    <Content Include="Content\images\logo\logo_icon.png" />
+    <Content Include="Content\js\analyser.js" />
+    <Content Include="Content\js\animate.js" />
+    <Content Include="Content\js\bootstrap-select.js" />
+    <Content Include="Content\js\bootstrap.bundle.js" />
+    <Content Include="Content\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\calendar.js" />
+    <Content Include="Content\js\calendar.min.js" />
+    <Content Include="Content\js\Chart.bundle.js" />
+    <Content Include="Content\js\Chart.bundle.min.js" />
+    <Content Include="Content\js\Chart.js" />
+    <Content Include="Content\js\Chart.min.js" />
+    <Content Include="Content\js\chart_custom_style1.js" />
+    <Content Include="Content\js\chart_custom_style2.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\custom_chart.js" />
+    <Content Include="Content\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\js\jquery.fancybox.js" />
+    <Content Include="Content\js\jquery.fancybox.min.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\owl.carousel.js" />
+    <Content Include="Content\js\perfect-scrollbar.min.js" />
+    <Content Include="Content\js\popper.min.js" />
+    <Content Include="Content\js\semantic.min.js" />
+    <Content Include="Content\js\settings.html" />
+    <Content Include="Content\js\utils.js" />
+    <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\KullaniciController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -100,7 +192,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\js\bootstrap.bundle.js.map" />
+    <Content Include="Content\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\js\bootstrap.js.map" />
+    <Content Include="Content\js\bootstrap.min.js.map" />
+    <Content Include="Content\css\bootstrap-grid.css.map" />
+    <Content Include="Content\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\css\bootstrap.css.map" />
+    <Content Include="Content\css\bootstrap.min.css.map" />
+    <Content Include="Content\fonts\Flaticon.eot" />
+    <Content Include="Content\fonts\Flaticon.ttf" />
+    <Content Include="Content\fonts\Flaticon.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\fonts\_flaticon.scss" />
+    <Content Include="Content\images\.DS_Store" />
+    <Content Include="Content\images\layout_img\.DS_Store" />
     <None Include="packages.config" />
+    <Content Include="Views\Kullanici\KullaniciGiris.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,8 +228,25 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{6329ad6c-6b7a-4b8d-ada1-5edf6ffeb6bb}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{8957060e-1b0b-427e-a706-c1693d288bd7}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{7A1D277E-C060-441E-90EA-860D1200820B}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{6f3fdd52-a282-4523-8499-49e614d3aa7b}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
