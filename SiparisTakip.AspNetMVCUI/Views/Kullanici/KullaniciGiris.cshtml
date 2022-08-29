@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿
+
+@model Entities.Models.Kullanici
+
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- basic -->
@@ -8,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Pluto - Responsive Bootstrap Admin Panel Templates</title>
+    <title>Admin Panel</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -47,32 +53,59 @@
                         </div>
                     </div>
                     <div class="login_form">
-                        <form>
-                            <fieldset>
-                                <div class="field">
-                                    <label class="label_field">Email Address</label>
-                                    <input type="email" name="email" placeholder="E-mail" />
-                                </div>
-                                <div class="field">
-                                    <label class="label_field">Password</label>
-                                    <input type="password" name="password" placeholder="Password" />
-                                </div>
-                                <div class="field">
-                                    <label class="label_field hidden">hidden label</label>
-                                    <label class="form-check-label"><input type="checkbox" class="form-check-input"> Remember Me</label>
-                                    <a class="forgot" href="">Forgotten Password?</a>
-                                </div>
-                                <div class="field margin_0">
-                                    <label class="label_field hidden">hidden label</label>
-                                    <button class="main_bt">Sing In</button>
-                                </div>
-                            </fieldset>
-                        </form>
+                        <p style="text-align:center" class="login-box-msg">Lütfen Giriş Bilgilerinizi Giriniz</p>
+                        @using (Html.BeginForm("KullaniciGiris", "Kullanici", FormMethod.Post, new { @id = "FrmKullaniciGiris" }))
+                      {
+            <fieldset>
+                <div class="field">
+                    <label class="label_field">Kullanı Adı</label>
+                    @*<input type="email" name="email" placeholder="E-mail" />*@
+ 
+                      @Html.TextBoxFor(Model=>Model.KullaniciKodu,new {@class="form-control", @placeholder="Kullanıcı Adı"})
+                     
+                </div>
+                <div class="field">
+                    <label class="label_field">Sifre</label>
+                    @*<input type="password" name="password" placeholder="Password" />*@
+
+                    @Html.PasswordFor(Model => Model.Parola, new { @class = "form-control", @placeholder = "Sifrenizi giriniz" })
+                </div>
+                <div class="field">
+                    <label class="label_field hidden">hidden label</label>
+                    <label class="form-check-label"><input type="checkbox" class="form-check-input"> Beni Hatırla</label>
+                    <a class="forgot" href="">Parolamı Unuttum</a>
+                </div>
+                <div class="field margin_0">
+                    <label class="label_field hidden">hidden label</label>
+                    <button type="submit" onclick="KullaniciGiris();" class="main_bt">Giriş Yap</button>
+                </div> 
+            </fieldset>            }
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="modal modal-danger" id="MdlBilgilendirme">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="MdlBaslik"></h4>
+                </div>
+                <div class="modal-body">
+                    <p id="MdlAciklama"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" data-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- jQuery -->
     <script src="~/Content/js/jquery.min.js"></script>
     <script src="~/Content/js/popper.min.js"></script>
